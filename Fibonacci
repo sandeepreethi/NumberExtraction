@@ -1,0 +1,25 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int number =13;
+        int previous =0;
+        Console.WriteLine(previous);
+        int current =1;
+        int next =1;
+        while(current<=number)
+        {
+            Console.WriteLine(current);
+            next = current +previous;
+            previous =current;
+            current = next;
+        }
+        
+    }
+    
+}
