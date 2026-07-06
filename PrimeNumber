@@ -1,0 +1,33 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+   public static void Main(string[] args)
+    {
+      int number =29;
+      bool isPrime =true;
+      if(number ==2 || number ==3)
+      isPrime =true;
+      else if(number%2 ==0)
+      isPrime = false;
+      else
+      {
+          for(int i=3;i*i<=number;i+=2)
+          {
+              if(number%i ==0)
+              {
+                isPrime = false;
+                break;
+              }
+          }
+          if(isPrime)
+          Console.WriteLine("Prime number");
+          else
+          Console.WriteLine("Not Prime number");
+      }
+      
+    }
+}
