@@ -1,0 +1,22 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+        int number =1234;
+        int remainder =0;
+        int quotient = number;
+        int sum=0;
+        while(quotient>0)
+        {
+            remainder =  quotient%10;
+            quotient = quotient/10;
+            sum = sum + remainder;
+        }
+        Console.WriteLine(sum);
+    }
+}
