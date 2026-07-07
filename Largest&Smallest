@@ -1,0 +1,29 @@
+// Online C# Editor for free
+// Write, Edit and Run your C# code using C# Online Compiler
+
+using System;
+
+public class HelloWorld
+{
+    public static void Main(string[] args)
+    {
+       int number =43286;
+       int largest =0;
+       int smallest =9;
+       int remainder=0;
+       int quotient =0;
+       quotient =number;
+       while(quotient>0)
+       {
+           remainder =quotient%10;
+           quotient =quotient/10;
+           if(remainder>=largest)
+           largest = remainder;
+           if(remainder<=smallest)
+           smallest =remainder;
+       }
+       Console.WriteLine(largest);
+       Console.WriteLine(smallest);
+       
+    }
+}
